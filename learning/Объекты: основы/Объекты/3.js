@@ -11,14 +11,12 @@
 
 // Если объект salaries пуст, то результат должен быть 0.
 
-function summ(obj){
-    let sum = 0;
-    for(num in obj){
-      sum += obj[num]
-    }
-    return sum
-  }
+const summ = (obj) => {
+  const values = Object.values(obj);
+  return values.reduce((acc, value) => acc += value, 0)
+}
   
+
 console.log(summ({
   John: 100,
   Ann: 160,

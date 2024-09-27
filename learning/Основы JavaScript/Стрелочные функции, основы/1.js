@@ -13,7 +13,7 @@
 //   function() { alert("Вы отменили выполнение."); }
 // );
 
-let ask = (question, yes, no) => {
+const ask = (question, yes, no) => {
     if(confirm(question)) yes()
     else no();
 }

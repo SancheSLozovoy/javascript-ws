@@ -19,14 +19,18 @@
 
 
 
-function sumSalaries(salaries){
-    let summ = 0;
-    if(Object.entries(salaries).length === 0) return 0
-    for(let zp of Object.values(salaries)){
-        summ += zp;
-    }
-    return summ
+const sumSalaries = (salaries) => {
+  return Object.values(salaries).reduce((acc, value) => acc += value, 0)
 }
+
+// function sumSalaries(salaries){
+//     let summ = 0;
+//     if(Object.entries(salaries).length === 0) return 0
+//     for(let zp of Object.values(salaries)){
+//         summ += zp;
+//     }
+//     return summ
+// }
 
 let salaries = {
   "John": 100,

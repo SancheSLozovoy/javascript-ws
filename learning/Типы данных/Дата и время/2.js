@@ -5,9 +5,9 @@
 // let date = new Date(2012, 0, 3);  // 3 января 2012 года
 // alert( getWeekDay(date) );        // нужно вывести "ВТ"
 
+let day = ["Пн","Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
 
 function getWeekDay(date){
-    let day = ["Пн","Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
     return day[date.getDay()]
 }
 

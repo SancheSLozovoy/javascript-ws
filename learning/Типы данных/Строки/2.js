@@ -6,12 +6,22 @@
 // checkSpam('free xxxxx') == true
 // checkSpam("innocent rabbit") == false
 
+const SPAM = ['xxx', 'viagra'];
 
-function checkSpam(str){
-    if(str.toLowerCase().includes("xxx") || str.toLowerCase().includes("viagra")){
-        return true;
+const checkSpam = (str) => {
+    for(let i = 0; i < SPAM.length; i++){
+        if(str.includes(SPAM[i])){
+            return true
+        }
     }
     return false
 }
 
-console.log(checkSpam("viagra omg"))
+// function checkSpam(str){
+//     if(str.toLowerCase().includes("xxx") || str.toLowerCase().includes("viagra")){
+//         return true;
+//     }
+//     return false
+// }
+
+console.log(checkSpam("omg"))

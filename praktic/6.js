@@ -1,7 +1,7 @@
 // Напишите функцию для поиска значения в n-арном дереве. 
 // Если искомое значение отсутствует, необходимо вернуть значение -1. Найдите 11, 1 и 25 узел из дерева.
 
-function* treeFunc(node) {
+function* generator(node) {
     yield node.node;
   
     for (let child of node.children) {
